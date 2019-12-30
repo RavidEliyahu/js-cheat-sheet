@@ -66,4 +66,6 @@ var trueArr = mixedArr.filter(Boolean);
 console.log(trueArr); // returns [“blue”, 9, true, “white”]
 ```
 
+## 8. For loop in - For Objects
 
+## 9. For loop of - For Arrays
