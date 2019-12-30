@@ -55,7 +55,7 @@ console.log(duplicatedValues); // returns [2, 4, 6]
 ```
 ### Option 2:
 ```
-let firstValues = [...new Set(numOne)];
+let firstValues = new Set(numOne);
 let duplicatedValues = numTwo.filter(item => firstValues.has(item));
 ```
 
