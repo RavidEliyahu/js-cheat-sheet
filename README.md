@@ -44,3 +44,26 @@ console.log(obj) // returns { 0: "tiger", 1: "rat" ...}
 let arr = new Array(5).fill(“1”)
 console.log(arr) // returns ["1", "1", "1", "1", "1"]
 ```
+
+## 6.Find the intersection between 2 arrays
+### Option 1:
+```
+var numOne = [0, 2, 4, 6, 8, 8];
+var numTwo = [1, 2, 3, 4, 5, 6];
+var duplicatedValues = […new Set(numOne)].filter(item => numTwo.includes(item));
+console.log(duplicatedValues); // returns [2, 4, 6]
+```
+### Option 2:
+```
+let firstValues = [...new Set(numOne)];
+let duplicatedValues = numTwo.filter(item => firstValues.has(item));
+```
+
+## 7.Remove falsy values from an array
+```
+var mixedArr = [0, “blue”, “”, NaN, 9, true, undefined, “white”, false];
+var trueArr = mixedArr.filter(Boolean);
+console.log(trueArr); // returns [“blue”, 9, true, “white”]
+```
+
+
