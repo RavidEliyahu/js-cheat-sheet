@@ -15,3 +15,11 @@ var uniqueAnimles2 = […new Set(animles)];
 
 console.log(uniqueAnimles2); // returns ["tiger", "rat", "lion", "frog", "monkey", "bird", "cat"]
 ```
+
+## 2.Replace a specific value in array
+
+```
+var fruits = [“banana”, “apple”, “orange”, “watermelon”, “apple”, “orange”, “grape”, “apple”];
+fruits.splice(0, 2, “potato”, “tomato”);
+console.log(fruits); // returns [“potato”, “tomato”, “orange”, “watermelon”, “apple”, “orange”, “grape”, “apple”]
+```
