@@ -88,7 +88,7 @@ myArray.splice(target_index,number_of_elements)
 
 ## 11.Set Operations
 ```
-// 27. Set Operations: isSuperSet
+// Set Operations: isSuperSet
 function isSuperset(set, subset) {
     for (let elem of subset) {
         if (!set.has(elem)) {
@@ -97,7 +97,7 @@ function isSuperset(set, subset) {
     }
     return true;
 }
-// 28. Set Operations: union
+// Set Operations: union
 function union(setA, setB) {
     let _union = new Set(setA);
     for (let elem of setB) {
@@ -106,7 +106,7 @@ function union(setA, setB) {
     return _union;
 }
 
-// 29. Set Operations: intersection
+// Set Operations: intersection
 function intersection(setA, setB) {
     let _intersection = new Set();
     for (let elem of setB) {
@@ -116,7 +116,7 @@ function intersection(setA, setB) {
     }
     return _intersection;
 }
-// 30. Set Operations: symmetricDifference
+// Set Operations: symmetricDifference
 function symmetricDifference(setA, setB) {
     let _difference = new Set(setA);
     for (let elem of setB) {
@@ -128,7 +128,7 @@ function symmetricDifference(setA, setB) {
     }
     return _difference;
 }
-// 31. Set Operations: difference
+// Set Operations: difference
 function difference(setA, setB) {
     let _difference = new Set(setA);
     for (let elem of setB) {
@@ -149,3 +149,34 @@ console.log(symmetricDifference(setA, setC));   // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC));            // => Set [1, 2]
 ```
 
+## 12. Replace all
+
+```
+var example = "potato potato";
+console.log(example.replace(/pot/, "tom"));
+// "tomato potato"
+console.log(example.replace(/pot/g, "tom"));
+// "tomato tomato"
+```
+
+## 13. Convert a number to a string
+
+```
+the_string = "123";
+console.log(+the_string);
+// 123
+
+the_string = "hello";
+console.log(+the_string);
+// NaN
+```
+
+## 14. Shuffle an array
+
+```
+var my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(my_list.sort(function() {
+    return Math.random() - 0.5
+}));
+// [4, 8, 2, 9, 1, 3, 6, 5, 7]
+```
